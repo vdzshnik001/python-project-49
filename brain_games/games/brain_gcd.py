@@ -1,14 +1,9 @@
+from brain_games.cli import welcome_user
 import math
 import random
+import prompt
 
-import prompt  # pyright: ignore[reportMissingImports]
-
-name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
-
-
-def welcome_user():
-    print(f'Hello, {name}!')
-
+name = welcome_user()
 
 def gcd():
     print('Find the greatest common divisor of given numbers.')
@@ -30,5 +25,4 @@ def gcd():
 
 
 def main():
-    welcome_user()
     gcd()

@@ -1,13 +1,8 @@
+from brain_games.cli import welcome_user
 import random
-
 import prompt
 
-name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
-
-
-def welcome_user():
-    print(f'Hello, {name}!')
-
+name = welcome_user()
 
 def prime():
     count = 0
@@ -35,5 +30,4 @@ def prime():
 
 
 def main():
-    welcome_user()
     prime()

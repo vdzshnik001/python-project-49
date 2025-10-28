@@ -1,13 +1,8 @@
+from brain_games.cli import welcome_user
 import random
-
 import prompt
 
-name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
-
-
-def welcome_user():
-    print(f'Hello, {name}!')
-
+name = welcome_user()
 
 def progression():
     count = 0
@@ -39,5 +34,4 @@ def progression():
 
 
 def main():
-    welcome_user()
     progression()

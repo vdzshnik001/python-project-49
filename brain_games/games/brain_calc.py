@@ -1,14 +1,9 @@
+from brain_games.cli import welcome_user
 import operator
 import random
-
 import prompt
 
-name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
-
-
-def welcome_user():
-    print(f'Hello, {name}!')
-
+name = welcome_user()
 
 def calc():
     print('What is the result of the expression?')
@@ -37,5 +32,4 @@ def calc():
 
 
 def main():
-    welcome_user()
     calc()  
