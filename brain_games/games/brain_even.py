@@ -24,7 +24,7 @@ def even():
             print('Correct!')
             count += 1
         elif rand_num % 2 == 0 and user_answer == 'no':
-            return print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again {name}!")
+            return print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
         elif rand_num % 2 != 0 and user_answer == 'yes':
             return print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
         else:
