@@ -32,7 +32,8 @@ def progression():
             print('Correct!')
             count += 1
         else:
-            return print(f"{user_answer} is wrong answer ;(. Correct answer is {correct_answer}.\nLet's try again, {name}!")
+            print(f"{user_answer} is wrong answer ;(. Correct answer is {correct_answer}.")
+            return print(f"Let's try again, {name}!")
     print(f'Congratulations, {name}!')
 
 
