@@ -17,6 +17,7 @@ def prime():
         print(f'Question: {rand_num}')
         user_answer = prompt.string('Your answer: ')
         correct_answer = ''
+        cor_str = 'Correct answer was '
         
         if rand_num in prime_numbers:
             correct_answer = 'yes'
@@ -27,7 +28,7 @@ def prime():
             print('Correct!')
             count += 1
         else:
-            print(f"{user_answer} is wrong answer ;(. Correct answer was {correct_answer}.")
+            print(f"{user_answer} is wrong answer ;(. {cor_str}{correct_answer}.")
             return print(f"Let's try again, {name}!")
         
     print(f'Congratulations, {name}!')

@@ -17,12 +17,13 @@ def gcd():
         print(f'Question: {rand_num1} {rand_num2}')
         user_answer = prompt.string('Your answer: ')
         correct_answer = math.gcd(rand_num1, rand_num2) 
-        
+        cor_str = 'Correct answer was '
+
         if user_answer == str(correct_answer):
             print('Correct!')
             count += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(. {cor_str}'{correct_answer}'.")
             return print(f"Let's try again, {name}!")
     
     print(f'Congratulations, {name}!')

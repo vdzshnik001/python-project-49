@@ -16,6 +16,7 @@ def progression():
         end = random.randint(40, 60)
         step = random.randint(2, 5)
         numbers = []
+        cor_str = 'Correct answer was '
 
         for current in range(start, end, step):
             numbers.append(current)
@@ -32,7 +33,7 @@ def progression():
             print('Correct!')
             count += 1
         else:
-            print(f"{user_answer} is wrong answer ;(. Correct answer was {correct_answer}.")
+            print(f"{user_answer} is wrong answer ;(. {cor_str}{correct_answer}.")
             return print(f"Let's try again, {name}!")
     
     print(f'Congratulations, {name}!')

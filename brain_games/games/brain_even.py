@@ -16,6 +16,7 @@ def even():
         rand_to_string = str(rand_num)
         print(f'Question: {rand_to_string}')
         user_answer = prompt.string('Your answer: ')
+        cor_str = 'Correct answer was '
  
         if rand_num % 2 == 0 and user_answer == 'yes':
             print('Correct!')
@@ -24,10 +25,10 @@ def even():
             print('Correct!')
             count += 1
         elif rand_num % 2 == 0 and user_answer == 'no':
-            print(f"'no' is wrong answer ;(. Correct answer was 'yes'.")
+            print(f"'no' is wrong answer ;(. {cor_str}'yes'.")
             return print(f"Let's try again, {name}!")
         elif rand_num % 2 != 0 and user_answer == 'yes':
-            print(f"'yes' is wrong answer ;(. Correct answer was 'no'.")
+            print(f"'yes' is wrong answer ;(. {cor_str}'no'.")
             return print(f"Let's try again, {name}!")
         else:
             print(f"{user_answer} is wrong answer ;(.")
