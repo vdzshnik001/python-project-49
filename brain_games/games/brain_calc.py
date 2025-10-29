@@ -1,13 +1,16 @@
-from brain_games.cli import welcome_user
-import operator
 import random
+
 import prompt
 
+from brain_games.cli import welcome_user
+
 name = welcome_user()
+
 
 def calc():
     print('What is the result of the expression?')
     count = 0
+
     def add(num1, num2):
         return num1 + num2
     

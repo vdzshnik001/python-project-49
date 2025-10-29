@@ -1,9 +1,12 @@
-from brain_games.cli import welcome_user
 import math
 import random
+
 import prompt
 
+from brain_games.cli import welcome_user
+
 name = welcome_user()
+
 
 def gcd():
     print('Find the greatest common divisor of given numbers.')

@@ -1,8 +1,11 @@
-from brain_games.cli import welcome_user
 import random
+
 import prompt
 
+from brain_games.cli import welcome_user
+
 name = welcome_user()
+
 
 def prime():
     count = 0
