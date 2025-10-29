@@ -23,17 +23,17 @@ def progression():
     
         numbers.sort()
         index_to_hide = random.randint(0, len(numbers) - 1)
-        correct_answer = numbers[index_to_hide]
+        cor_ans = numbers[index_to_hide]
         numbers[index_to_hide] = ".."
         string = " ".join(map(str, numbers))
         print(f'Question: {string}')
         user_answer = prompt.string('Your answer: ')
 
-        if int(user_answer) == int(correct_answer):
+        if int(user_answer) == int(cor_ans):
             print('Correct!')
             count += 1
         else:
-            print(f"{user_answer} is wrong answer ;(. {cor_str}{correct_answer}.")
+            print(f"{user_answer} is wrong answer ;(. {cor_str}{cor_ans}.")
             return print(f"Let's try again, {name}!")
     
     print(f'Congratulations, {name}!')

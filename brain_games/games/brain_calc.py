@@ -31,15 +31,15 @@ def calc():
         rand_operator = random.choice(list(operators))
         symbol = operators[rand_operator]
         print(f'Question: {num1} {rand_operator} {num2}')
-        correct_answer = symbol(num1, num2)
+        cor_ans = symbol(num1, num2)
         cor_str = 'Correct answer was '
         user_answer = prompt.string('Your answer: ')
  
-        if int(user_answer) == correct_answer:
+        if int(user_answer) == cor_ans:
             print('Correct!')
             count += 1
         else:
-            print(f"{user_answer} is wrong answer ;(. {cor_str}'{correct_answer}'.")
+            print(f"{user_answer} is wrong answer ;(. {cor_str}'{cor_ans}'.")
             return print(f"Let's try again, {name}!")
         
     print(f'Congratulations, {name}!')
