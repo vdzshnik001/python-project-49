@@ -13,8 +13,8 @@ def progression():
 
     while count < 3:
         start = random.randint(1, 10)
-        end = random.randint(40, 50)
-        step = random.randint(2, 10)
+        end = random.randint(40, 60)
+        step = random.randint(2, 5)
         numbers = []
 
         for current in range(start, end, step):
